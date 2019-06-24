@@ -27,6 +27,8 @@
     <!-- Animsition -->
     <link href="css/animsition.min.css" rel="stylesheet">
 
+    <link href="./css/amsify.suggestags.css" rel="stylesheet">
+
 		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
 
   	<!-- Core css -->
@@ -50,25 +52,17 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-
+          <a href="#" class="font-lg sidenav-size-toggle hidden-xs">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </a>
           <a class="navbar-brand" href="#">
-						<img src="./img/equalbit-logo.png" alt="">
-					</a>
+            <img src="./img/equalbit-logo.png" alt="">
+          </a>
 
           <ul class="nav navbar-nav-xs">
             <li>
               <a href="#" class="font-lg collapse" data-toggle="collapse" data-target="#headerNavbarCollapse">
-                <i class="icon-user move-d-1"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="search-toggle">
-                <i class="fa fa-search"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="toggle-right-sidebar">
-                <i class="icon-menu2"></i>
+                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
               </a>
             </li>
           </ul>
@@ -77,12 +71,11 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="headerNavbarCollapse">
           <ul class="nav navbar-nav">
+            <li class="hidden-xs">
 
-
-
-
-
+            </li>
           </ul>
+
           <ul class="nav navbar-nav navbar-right">
 
 
@@ -297,7 +290,7 @@
                         <div class="row">
                             <div class="col-md-6">
                               <label class="switch-toggle">
-                                <input type="checkbox" checked="">
+                                <input type="checkbox">
                                 <span></span> Annual Exam
                               </label>
                             </div>
@@ -315,12 +308,12 @@
                         <div class="row">
                             <div class="col-md-12">
                               <label class="switch-toggle">
-                                <input type="checkbox" checked="">
+                                <input type="checkbox">
                                 <span></span>
                                 Utilization Amount
                               </label>
                             </div>
-                            <div class="col-md-12 toggle-content">
+                            <div class="col-md-12 toggle-content hide">
                               <div class="row">
 
                                 <div class="col-md-8">
@@ -389,11 +382,11 @@
                         <div class="row">
                             <div class="col-md-12">
                               <label class="switch-toggle">
-                                <input type="checkbox" checked="">
+                                <input type="checkbox">
                                 <span></span> IP Event
                               </label>
                             </div>
-                            <div class="col-md-12 toggle-content">
+                            <div class="col-md-12 toggle-content hide">
                               <select class="form-control">
                                 <option>Select some Option</option>
                                 <option value="2">Option 1</option>
@@ -413,20 +406,20 @@
                     <div class="card">
                       <div class="form-group">
                         <label class="bmd-label-floating floting-label">Chronic Condition</label>
-                        <input type="text" class="form-control" placeholder="">
+                        <input type="text" name="chronic" class="form-control" placeholder="" value="red">
                       </div>
                     </div>
 
                     <div class="card">
                       <div class="form-group">
                         <label class="bmd-label-floating floting-label">Hierachical Condition Category</label>
-                        <input type="text" class="form-control" placeholder="">
+                        <input type="text" name="chronic" class="form-control" placeholder="">
                       </div>
                     </div>
                     <div class="card">
                       <div class="form-group">
                         <label class="bmd-label-floating floting-label">Prescription</label>
-                        <input type="text" class="form-control" placeholder="">
+                        <input type="text" name="chronic" class="form-control" placeholder="">
                       </div>
                     </div>
 
@@ -434,12 +427,12 @@
                       <div class="card-body">
                         <div class="row">
                             <div class="col-md-12">
-                              <label class="switch-toggle">
-                                <input type="checkbox" checked="">
+                              <label class="switch-toggle ">
+                                <input type="checkbox">
                                 <span></span> Procedure
                               </label>
                             </div>
-                            <div class="col-md-12 toggle-content">
+                            <div class="col-md-12 toggle-content hide">
                               <div class="form-group">
                                 <input type="text" class="form-control" placeholder="Choose a Conducted or Not Conducted">
                               </div>
@@ -493,6 +486,7 @@
     <!-- Animsition -->
     <script src="js/jquery.animsition.min.js"></script>
 
+    <script src="./js/jquery.amsify.suggestags.js"></script>
     <!-- App -->
     <script src="js/app.min.js"></script>
 
@@ -513,7 +507,21 @@
 
     </script>
 
+    <script type="text/javascript">
+    $('input[name="chronic"]').amsifySuggestags({
+      suggestions: ['Black', 'White', 'Red', 'Blue', 'Green', 'Orange']
+    });
+    </script>
 
+    <script type="text/javascript">
+      $('.switch-toggle input:checkbox').change(function() {
+        if ($(this).is(":checked")) {
+          $(this).closest('.switch-toggle').parent().siblings().removeClass("hide");
+        } else {
+          $(this).closest('.switch-toggle').parent().siblings().addClass("hide");
+        }
+      });
+    </script>
 
 	</body>
 </html>
