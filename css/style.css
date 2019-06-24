@@ -22,3 +22,20 @@
 .card .toggle-content{
   margin-top: 10px
 }
+.select2-container{
+  width: 100% !important
+}
+.select2-container--default .select2-selection--multiple {
+    height: auto;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice{
+  font-size: 12px;
+  background-color: #fff;
+border: 1px solid #d5dbe0;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    color: #f15a26;
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #005a89;
+}

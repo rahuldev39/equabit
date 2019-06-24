@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,6 +11,9 @@
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Select2 -->
+    <link href="css/select2.min.css" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link href="./fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -222,19 +224,20 @@
                     <div class="row">
                         <div class="col-md-6">
                           <div class="form-group">
-                            <select class="form-control" >
-                              <option disabled selected>Choose Gender</option>
-                              <option value="2">Male</option>
-                              <option value="3">Femle</option>
+                            <select class="form-control chosen-gender" multiple>
+                              <option>Male</option>
+                              <option>Female</option>
                             </select>
                           </div>
                         </div>
                         <div class="col-md-6">
                           <div class="form-group">
-                            <select class="form-control">
-                              <option>Choose State</option>
-                              <option value="2">State1</option>
-                              <option value="3">State2</option>
+                            <select class="form-control chosen-state" multiple>
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                              <option>Option 4</option>
+                              <option>Option 5</option>
                             </select>
                           </div>
                         </div>
@@ -245,10 +248,12 @@
                         <div class="col-md-6">
                           <div class="form-group">
                             <label class="bmd-label-floating floting-label">Country</label>
-                            <select class="form-control">
-                              <option>Choose Country</option>
-                              <option value="2">Country1</option>
-                              <option value="3">Country2</option>
+                            <select class="form-control chosen-country" multiple>
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                              <option>Option 4</option>
+                              <option>Option 5</option>
                             </select>
                           </div>
                         </div>
@@ -479,6 +484,8 @@
 
   	<!-- Modernizr -->
     <script src="js/modernizr.min.js"></script>
+    <!-- Select2 -->
+    <script src="js/select2.min.js"></script>
 
     <!-- SlimScroll -->
     <script src="js/jquery.slimscroll.min.js"></script>
@@ -488,6 +495,25 @@
 
     <!-- App -->
     <script src="js/app.min.js"></script>
+
+    <script type="text/javascript">
+    $(function()  {
+
+        $('.chosen-state').select2({
+            placeholder: "Select a state"
+        });
+
+        $('.chosen-country').select2({
+            placeholder: "Select country"
+        });
+        $('.chosen-gender').select2({
+            placeholder: "Select Gender"
+        });
+    });
+
+    </script>
+
+
 
 	</body>
 </html>
