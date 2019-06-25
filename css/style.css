@@ -47,6 +47,32 @@ border: 1px solid #d5dbe0;
     color: #02365d;
     font-size: 20px;
 }
+.table-pagination {
+    padding: 8px 15px;
+    border-top: 1px solid #e8e8e8;
+}
+.toggle-text-btn{
+  display: flex;
+}
+.toggle-text-btn label {
+    font-weight: 500;
+    font-size: 12px;
+}
+.toggle-text-btn label input{
+  display: none;
+}
+.toggle-text-btn label input + span {
+    display: inline-block;
+    padding: 6px 14px;
+    border: 1px solid #e6e4e4;
+    color: #b7c0ce;
+    cursor: pointer;
+}
+.toggle-text-btn label input:checked + span {
+    border: 1px solid #08294b;
+    background-color: #08294b;
+    color: white;
+}
 @media (min-width: 768px)
 {
   .side-nav-sm .navbar {
