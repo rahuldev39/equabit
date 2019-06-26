@@ -73,6 +73,15 @@ border: 1px solid #d5dbe0;
     background-color: #08294b;
     color: white;
 }
+ul.member-detail-list  li  span{
+  margin-right: 4px
+}
+ul.member-detail-list li {
+    border-bottom: 1px solid #f0f3f5;
+}
+.graph-container{
+
+}
 @media (min-width: 768px)
 {
   .side-nav-sm .navbar {
