@@ -73,11 +73,23 @@ border: 1px solid #d5dbe0;
     background-color: #08294b;
     color: white;
 }
-ul.member-detail-list  li  span{
-  margin-right: 4px
+ul.member-detail-list li span {
+    margin-right: 4px;
+    display: block;
+    font-size: 16px;
+    color: #e65f31;
+    margin-bottom: 5px;
 }
 ul.member-detail-list li {
-    border-bottom: 1px solid #f0f3f5;
+    border-bottom: 0px;
+    /* flex: 1; */
+    margin: 12px 0px;
+    padding: 10px 20px;
+    font-size: 13px;
+    border-left: 1px solid #f3f3f3;
+}
+ul.member-detail-list li:first-child{
+  border-left: 0px
 }
 .graph-container{
 
@@ -102,6 +114,28 @@ ul.member-detail-list li {
     color: #02365c;
     font-weight: 600;
 }
+.member-detail-list {
+    display: flex;
+    justify-content: flex-end;
+}
+.user-box {
+    display: flex;
+    align-items: center;
+    padding: 15px 0px;
+}
+.tab-container .list-group{
+  margin-bottom: 0px
+}
+.tab-container .tab-content{
+
+    overflow: auto;
+}
+.canvasjs-chart-credit{
+  display: none;
+}
+.header-toolbar label {
+    margin-right: 8px;
+}
 @media (min-width: 768px)
 {
   .side-nav-sm .navbar {
@@ -118,5 +152,15 @@ ul.member-detail-list li {
 }
 .header-top .navbar-brand{
     float: right;
+}
+}
+@media (max-width: 767px){
+  .user-box {
+    padding: 0px 0px;
+    flex-direction: column;
+}
+.member-detail-list {
+    display: flex;
+    justify-content: center;
 }
 }
