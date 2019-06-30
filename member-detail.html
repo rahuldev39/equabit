@@ -207,7 +207,7 @@
                   <div class="header-toolbar font-main">
                     <div class="btn-toolbar font-12" role="toolbar">
                       <div class="btn-group" role="group">
-                        <label for="">Sort By: </label> 
+                        <label for="">Sort By: </label>
                         <select class="" name="">
                           <option value="">12 months</option>
                           <option value="">24 months</option>
@@ -484,37 +484,37 @@
                   <tr>
                     <th>Source of Claim</th>
                     <th>Amount</th>
-                    <th>Date</th>
+                    <th width="100">Date</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Lorem Ipsum</td>
+                    <td>IP</td>
                     <td>1245$</td>
                     <td>13/5/2008</td>
                   </tr>
                   <tr>
-                    <td>consectetur adipiscing </td>
+                    <td>OP</td>
                     <td>1245$</td>
                     <td>15/3/2012</td>
                   </tr>
                   <tr>
-                    <td>Nunc vel tempor</td>
+                    <td>CC</td>
                     <td>234$</td>
                     <td>16/8/1998</td>
                   </tr>
                   <tr>
-                    <td>Lorem Ipsum</td>
+                    <td>PC</td>
                     <td>1245$</td>
                     <td>13/5/2008</td>
                   </tr>
                   <tr>
-                    <td>consectetur adipiscing </td>
+                    <td>CC</td>
                     <td>1245$</td>
                     <td>15/3/2012</td>
                   </tr>
                   <tr>
-                    <td>Nunc vel tempor</td>
+                    <td>IP</td>
                     <td>234$</td>
                     <td>16/8/1998</td>
                   </tr>
@@ -676,8 +676,9 @@ var config = {
     datasets: [{
       data: [
         24,
-        41,
+        30,
         26,
+        20,
       ],
       backgroundColor: [
         "#F7464A",
@@ -689,9 +690,10 @@ var config = {
       label: 'Dataset 1'
     }],
     labels: [
-      "C Conditions",
-      "Behavioral C",
-      "Procedures"
+      "IP",
+      "OP",
+      "CC",
+      "PC"
     ]
   },
   options: {
