@@ -32,7 +32,9 @@
 		<link href="./css/style.css" rel="stylesheet" class="core-css">
   </head>
 
-	<body>
+  <body class="loader-on">
+
+    <div class="loader"></div>
 
     <!-- wrapper -->
 		<div class="wrapper  has-footer">
@@ -1195,6 +1197,12 @@
           },2000);
         });
       });
+    </script>
+    <script type="text/javascript">
+    $(window).on('load', function() {
+      $('.loader').fadeOut();
+      $('body').removeClass('loader-on')
+    });
     </script>
 
 	</body>

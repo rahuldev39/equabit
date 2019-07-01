@@ -34,9 +34,7 @@
 
 	<body class="loader-on">
 
-    <div class="loader">
-      
-    </div>
+    <div class="loader"></div>
 
     <!-- wrapper -->
 		<div class="wrapper  has-footer">
@@ -286,6 +284,13 @@
 
     <!-- App -->
     <script src="js/app.min.js"></script>
+
+    <script type="text/javascript">
+    $(window).on('load', function() {
+      $('.loader').fadeOut();
+      $('body').removeClass('loader-on')
+    });
+    </script>
 
 	</body>
 </html>
