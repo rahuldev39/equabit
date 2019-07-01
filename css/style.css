@@ -1,3 +1,20 @@
+.loader {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: #012038f2;
+    left: 0px;
+    top: 0px;
+    z-index: 100000;
+    background-image: url(./../img/Spinner-1.4s-200px.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 154px;
+}
+body.loader-on{
+  overflow: hidden;
+  height: 100vh
+}
 .navbar-brand img {
     width: 170px;
 }
