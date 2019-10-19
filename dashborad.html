@@ -14,7 +14,7 @@
     <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link href="./fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="./fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Hover Css -->
     <link href="css/hover-min.css" rel="stylesheet">
@@ -203,463 +203,220 @@
 
 
       <!-- Start Main Container -->
-      <div class="main-container">
+      <div class="main-container dashboard-container">
 
         <div class="content-wrap">
           <div class="row">
-            <div class="col-lg-7">
-              <div class="panel">
-                <div class="panel-body">
-                  <div class="row font-12">
-                    <div class="col-xs-9">
-                      <span class="text-upper font-header">New Member</span>
-                      <span class="pointer m-d-1 m-l-10"><i class="icon-file-text2"></i></span>
-                      <span class="pointer m-d-1 m-l-10 refresh-widget"><i class="icon-spinner9"></i></span>
-                    </div>
-                    <div class="col-xs-3 text-right">
-                      <label class="switch-toggle m-l-5 switch-red">
-                        <input type="checkbox">
-                        <span></span>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="chart-placeholder line-placeholder m-t-10"></div>
-                </div>
-                <div class="panel-footer bg-white">
-                  <div class="row text-center">
-                    <div class="col-xs-4">
-                      <h4 class="no-m text-dark m-t-5 font-header">3,290</h4>
-                      <div class="font-12 m-t-5 m-b-5">Total Account</div>
-                    </div>
-                    <div class="col-xs-4">
-                      <h4 class="no-m text-dark m-t-5 font-header">187</h4>
-                      <div class="font-12 m-t-5 m-b-5">Facebook Account</div>
-                    </div>
-                    <div class="col-xs-4">
-                      <h4 class="no-m text-dark m-t-5 font-header">1,879</h4>
-                      <div class="font-12 m-t-5 m-b-5">Google Account</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="loading-wrap">
-                  <div class="loading-dots">
-                    <div class="dot1"></div>
-                    <div class="dot2"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-5">
+
+            <div class="col-lg-12">
               <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-6 col-sm-3">
                   <div class="panel">
-                    <div class="panel-body p-20">
-                      <div class="text-dark h4 no-m font-header">3,189</div>
-                      <div class="font-12">Total New Member</div>
-                      <div class="sparkbar m-t-5"></div>
+                    <div class="panel-body p-0">
+                      <div class="dashboard-tile p-20">
+                        <div class="tile-icon bg-dark">
+                          <img src="./img/open-case.png" alt="" width="23">
+                        </div>
+                        <div class="tite-content">
+                          <strong class="font-14">Open Cases</strong>
+                          <div class="font-12 text-dark m-t-5">Compared to last week</div>
+                          <div class="sparkline m-t-20"></div>
+                          <div class=" h2 no-m font-header">1,174</div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div><!-- /.col -->
-                <div class="col-sm-6">
+                <div class="col-sm-6 col-sm-3">
                   <div class="panel">
-                    <div class="panel-body p-20">
-                      <div class="text-dark h4 no-m font-header">1,172</div>
-                      <div class="font-12">Total Sales</div>
-                      <div class="sparkline m-t-5"></div>
+                    <div class="panel-body p-0">
+                      <div class="dashboard-tile p-20">
+                        <div class="tile-icon bg-warning">
+                          <img src="./img/progress-case.png" alt="" width="23">
+                        </div>
+                        <div class="tite-content">
+                          <strong class="font-14">Progress Cases</strong>
+                          <div class="font-12 text-warning m-t-5">54% From last month</div>
+                          <div class="sparkline m-t-20"></div>
+                          <div class=" h2 no-m font-header">528</div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div><!-- /.col -->
-              </div><!-- /.row -->
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="panel">
-                    <div class="panel-body p-20 text-center">
-                       <div class="text-dark h3 no-m font-header">712</div>
-                       <div class="font-12 m-t-5">New Items</div>
+                <div class="col-sm-6 col-sm-3">
+                  <div class="panel ">
+                    <div class="panel-body p-0">
+                      <div class="dashboard-tile p-20">
+                        <div class="tile-icon bg-success">
+                          <img src="./img/close-case.png" alt="" width="23">
+                        </div>
+                        <div class="tite-content ">
+                          <strong class="font-14">Close Cases</strong>
+                          <div class="font-12 text-success m-t-5">55% from last 28 hours</div>
+                          <div class="sparkline m-t-20"></div>
+                          <div class=" h2 no-m font-header">345</div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div><!-- /.col -->
-                <div class="col-sm-6">
-                  <div class="panel bg-main">
-                    <div class="panel-body p-20 text-center">
-                      <div class="h3 no-m font-header">1,199</div>
-                       <div class="font-12 m-t-5">Comments</div>
+                <div class="col-sm-6 col-sm-3">
+                  <div class="panel">
+                    <div class="panel-body p-0">
+                      <div class="dashboard-tile p-20">
+                        <div class="tile-icon bg-danger">
+                          <img src="./img/follow-ups.png" alt="" width="23">
+                        </div>
+                        <div class="tite-content ">
+                          <strong class="font-14">Follow Ups</strong>
+                          <div class="font-12 text-danger m-t-5">Compared to last week</div>
+                          <div class="sparkline m-t-20"></div>
+                          <div class=" h2 no-m font-header">857</div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div><!-- /.col -->
               </div><!-- /.row -->
 
-              <div class="panel">
-                <div class="panel-body">
-                  <div class="row font-12">
-                    <div class="col-xs-6">
-                      <span class="text-upper font-header">Follower</span>
-                    </div><!-- /.col -->
-                    <div class="col-xs-6 text-right">
-                      <span class="pointer m-d-1 m-l-10"><i class="icon-download2"></i></span>
-                      <span class="pointer m-d-1 m-l-10 refresh-widget"><i class="icon-spinner9"></i></span>
-                    </div><!-- /.col -->
-                  </div><!-- /.row -->
-
-                  <div class="chart-placeholder area-placeholder m-t-10"></div>
-                </div>
-                <div class="loading-wrap">
-                  <div class="loading-dots">
-                    <div class="dot1"></div>
-                    <div class="dot2"></div>
-                  </div>
-                </div>
-              </div>
             </div><!-- /.col -->
           </div><!-- /.row -->
 
           <div class="row">
-            <div class="col-lg-7">
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="panel panel-default panel-stat no-icon">
-                    <div class="bg-main content-wrap b-b">
-                      <div class="value">
-                        <h2 class="font-header no-m">3,156</h2>
-                      </div>
-                      <div class="detail text-right">
-                        <div class="text-upper">Today Visited</div>
-                        <small class="text-muted m-d-2">5% increased</small>
-                      </div>
-                    </div>
-                    <div class="panel-body">
-                      <h5 class="font-header">WEEKLY STATS</h5>
-                    </div>
-                    <table class="table table-bordered font-12">
-                      <tbody>
-                        <tr>
-                          <td>Monday</td>
-                          <td class="text-success text-center"><i class="fa fa-level-up"></i> 8.6%</td>
-                          <td class="text-center">1745</td>
-                        </tr>
-                        <tr>
-                          <td>Tuesday</td>
-                          <td class="text-success text-center"><i class="fa fa-level-up"></i> 12.6%</td>
-                          <td class="text-center">2,135</td>
-                        </tr>
-                        <tr>
-                          <td>Wednesday</td>
-                          <td class="text-danger text-center"><i class="fa fa-level-down"></i> -2.6%</td>
-                          <td class="text-center">1,632</td>
-                        </tr>
-                        <tr>
-                          <td>Thursday</td>
-                          <td class="text-danger text-center"><i class="fa fa-level-down"></i> -1.1%</td>
-                          <td class="text-center">1567</td>
-                        </tr>
-                        <tr>
-                          <td>Friday</td>
-                          <td class="text-success text-center"><i class="fa fa-level-up"></i> 3.4%</td>
-                          <td class="text-center">1902</td>
-                        </tr>
-                      </tbody>
-                    </table>
+            <div class="col-sm-6">
+              <div class="panel panel-default panel-stat no-icon">
+                <div class=" content-wrap b-b">
+
+                  <div class="clearfix">
+                    <div class="pull-left">
+                      <strong class="font-16">Today Visited</strong>
+                     </div>
+                    <small class="text-muted m-d-2 pull-right">5% increased</small>
                   </div>
-                </div><!-- /.col -->
-                <div class="col-sm-6">
-                  <div class="panel panel-default panel-stat">
-                    <div class="content-wrap b-b">
-                      <div class="value stat-icon">
-                        <span><i class="icon-gift"></i></span>
-                      </div>
-                      <div class="detail text-right">
-                        <h3 class="text-upper font-header no-m">$26,189</h3>
-                        <small class="text-muted">Total Balance</small>
-                      </div>
-                    </div>
-                    <div class="panel-body">
-                      <h5 class="font-header">WEEKLY STATS</h5>
-                    </div>
-                    <table class="table table-bordered font-12">
-                      <tbody>
-                        <tr>
-                          <td>Monday</td>
-                          <td class="text-success text-center"><i class="fa fa-level-up"></i> 8.6%</td>
-                          <td class="text-center">$2,095</td>
-                        </tr>
-                        <tr>
-                          <td>Tuesday</td>
-                          <td class="text-danger text-center"><i class="fa fa-level-down"></i> -8.0%</td>
-                          <td class="text-center">$1,235</td>
-                        </tr>
-                        <tr>
-                          <td>Wednesday</td>
-                          <td class="text-success text-center"><i class="fa fa-level-up"></i> 4.8%</td>
-                          <td class="text-center">$1,801</td>
-                        </tr>
-                        <tr>
-                          <td>Thursday</td>
-                          <td class="text-success text-center"><i class="fa fa-level-up"></i> 7.5%</td>
-                          <td class="text-center">$2,709</td>
-                        </tr>
-                        <tr>
-                          <td>Friday</td>
-                          <td class="text-success text-center"><i class="fa fa-level-up"></i> 11.4%</td>
-                          <td class="text-center">$3,902</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div><!-- /.col -->
-              </div><!-- /.row -->
+                </div>
+                <div class="table-responsive">
+                  <table class="table table-bordered font-12 table-hover">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>ID</th>
+                        <th>Contact</th>
+                        <th>Description</th>
+                        <th>Date/Time</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="bg-success">
+                        <th><i class="fa fa-user-o table-icon text-white" aria-hidden="true"></i></th>
+                        <td>rhl2123167</td>
+                        <td class="">John Wick</td>
+                        <td class="">LOrem Ipsum</td>
+                        <td class="">12/6/2019 - 1:30pm</td>
+                      </tr>
+
+                      <tr>
+                        <th><i class="fa fa-user-o table-icon" aria-hidden="true"></i></th>
+                        <td>dh78123167</td>
+                        <td class="">Cody Miles</td>
+                        <td class="">LOrem Ipsum</td>
+                        <td class="">23/8/2019 - 7:50pm</td>
+                      </tr>
+
+                      <tr>
+                        <th><i class="fa fa-user-o table-icon" aria-hidden="true"></i></th>
+                        <td>jg678123167</td>
+                        <td class="">Brad Pit</td>
+                        <td class="">LOrem Ipsum</td>
+                        <td class="">13/9/2019 - 8:00pm</td>
+                      </tr>
+
+                      <tr>
+                        <th><i class="fa fa-user-o table-icon " aria-hidden="true"></i></th>
+                        <td>trt78123167</td>
+                        <td class="">Tom Hardy</td>
+                        <td class="">LOrem Ipsum</td>
+                        <td class="">17/2/2019 - 4:23pm</td>
+                      </tr>
+                      <tr>
+                        <th><i class="fa fa-user-o table-icon" aria-hidden="true"></i></th>
+                        <td>rhl2123167</td>
+                        <td class="">John Wick</td>
+                        <td class="">LOrem Ipsum</td>
+                        <td class="">12/6/2019 - 1:30pm</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
             </div><!-- /.col -->
-            <div class="col-lg-5">
-              <div class="panel panel-white">
-                <div class="panel-heading font-header font-header">
-                  Inbox
-                  <ul class="panel-toolbar list-unstyled">
-                    <li class="dropdown collapse-option">
-                      <a href="#" class="text-muted dropdown-toggle" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></a>
-                      <ul class="dropdown-menu dropdown-animated fade-effect">
-                        <li><a href="#" class="text-muted refresh-widget"><i class="icon-spinner9"></i></a></li>
-                        <li><a href="#collapsedPanel1" class="expand-widget" data-toggle="collapse" aria-expanded="true"><i class="icon-circle-up"></i></a></li>
-                        <li><a href="#" class="fullscreen-widget"><i class="icon-enlarge"></i></a></li>
-                        <li><a><i class="icon-cross"></i></a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-                <div id="collapsedPanel1" class="collapse in">
-                  <div class="panel-body p-tb-15 no-p-lr">
-                    <ul class="nav nav-tabs tabs-float font-12 p-l-10">
-                      <li role="presentation" class="active"><a href="#inboxAllTab" data-toggle="tab">All</a></li>
-                      <li role="presentation"><a href="#inboxUnreadTab" data-toggle="tab">Unread</a></li>
-                      <li role="presentation"><a href="#inboxArchivedTab" data-toggle="tab">Archived</a></li>
-                    </ul>
+            <div class="col-sm-6">
+              <div class="panel panel-default panel-stat no-icon">
+                <div class=" content-wrap b-b">
+
+                  <div class="clearfix">
+                    <div class="pull-left">
+                      <strong class="font-16">Open Cases</strong>
+                     </div>
+                    <small class="text-muted m-d-2 pull-right">5% increased</small>
                   </div>
-                  <div class="tab-content">
-                    <div class="tab-pane fade in active" id="inboxAllTab">
-                      <ul class="activity-widget no-icon list-unstyled">
-                        <li class="p-lr-10">
-                          <a href="inbox.html" class="animsition-link">
-                            <div class="user-wrapper">
-                              <div class="profile-pic">
-                                <img src="./img/profile7.jpg" alt="" class="img-circle">
-                              </div>
-                              <div class="p-t-5">
-                                <div class="font-12 text-dark">Katie Calhoun</div>
-                                <div class="font-10 text-ellipsis">A wrap asserts a flashing asterisk.</div>
-                              </div>
-                            </div>
-                            <div class="activity-time font-11 text-muted">2 hrs ago</div>
-                          </a>
-                        </li>
-                        <li class="p-lr-10">
-                          <a href="inbox.html" class="animsition-link">
-                            <div class="user-wrapper">
-                              <div class="profile-pic">
-                                <img src="./img/profile8.jpg" alt="" class="img-circle">
-                              </div>
-                              <div class="p-t-5">
-                                <div class="font-12 text-dark">Elvin Cueva</div>
-                                <div class="font-10 text-ellipsis">The bullet couples a pursuing worry before the litter. A flesh rewrites a striking scanner before the peasant.</div>
-                              </div>
-                            </div>
-                            <div class="activity-time font-11 text-muted">yesterday</div>
-                          </a>
-                        </li>
-                        <li class="p-lr-10">
-                          <a href="inbox.html" class="animsition-link">
-                            <div class="user-wrapper">
-                              <div class="profile-pic">
-                                <img src="./img/profile9.jpg" alt="" class="img-circle">
-                              </div>
-                              <div class="p-t-5">
-                                <div class="font-12 text-dark">Harris Wilson</div>
-                                <div class="font-10 text-ellipsis">A rectangle accelerates the filter. A dry courtesy advances an apart conjecture.</div>
-                              </div>
-                            </div>
-                            <div class="activity-time font-11 text-muted">2 days ago</div>
-                          </a>
-                        </li>
-                        <li class="p-lr-10">
-                          <a href="inbox.html" class="animsition-link">
-                            <div class="user-wrapper">
-                              <div class="profile-pic">
-                                <img src="./img/profile10.jpg" alt="" class="img-circle">
-                              </div>
-                              <div class="p-t-5">
-                                <div class="font-12 text-dark">Felicia Clancy</div>
-                                <div class="font-10 text-ellipsis">A stare shines past another bull! A subjective candidate declines without the envelope.</div>
-                              </div>
-                            </div>
-                            <div class="activity-time font-11 text-muted">3 days ago</div>
-                          </a>
-                        </li>
-                        <li class="p-lr-10">
-                          <a href="inbox.html" class="animsition-link">
-                            <div class="user-wrapper">
-                              <div class="profile-pic">
-                                <img src="./img/profile11.jpg" alt="" class="img-circle">
-                              </div>
-                              <div class="p-t-5">
-                                <div class="font-12 text-dark">Larry McCabe</div>
-                                <div class="font-10 text-ellipsis">The guilt encourages this inverse opposite the horizontal gene. The college suspects behind the cell! The landlord hopes.</div>
-                              </div>
-                            </div>
-                            <div class="activity-time font-11 text-muted">1 week ago</div>
-                          </a>
-                        </li>
-                      </ul>
-                    </div><!-- /.tab-pane -->
-
-                    <div class="tab-pane fade" id="inboxUnreadTab">
-                      <ul class="activity-widget no-icon list-unstyled">
-                        <li class="p-lr-10">
-                          <a href="inbox.html" class="animsition-link">
-                            <div class="user-wrapper">
-                              <div class="profile-pic">
-                                <img src="./img/profile7.jpg" alt="" class="img-circle">
-                              </div>
-                              <div class="p-t-5">
-                                <div class="font-12 text-dark">Katie Calhoun</div>
-                                <div class="font-10 text-ellipsis">A wrap asserts a flashing asterisk.</div>
-                              </div>
-                            </div>
-                            <div class="activity-time font-11 text-muted">2 hrs ago</div>
-                          </a>
-                        </li>
-                        <li class="p-lr-10">
-                          <a href="inbox.html" class="animsition-link">
-                            <div class="user-wrapper">
-                              <div class="profile-pic">
-                                <img src="./img/profile8.jpg" alt="" class="img-circle">
-                              </div>
-                              <div class="p-t-5">
-                                <div class="font-12 text-dark">Elvin Cueva</div>
-                                <div class="font-10 text-ellipsis">The bullet couples a pursuing worry before the litter. A flesh rewrites a striking scanner before the peasant.</div>
-                              </div>
-                            </div>
-                            <div class="activity-time font-11 text-muted">yesterday</div>
-                          </a>
-                        </li>
-                        <li class="p-lr-10">
-                          <a href="inbox.html" class="animsition-link">
-                            <div class="user-wrapper">
-                              <div class="profile-pic">
-                                <img src="./img/profile9.jpg" alt="" class="img-circle">
-                              </div>
-                              <div class="p-t-5">
-                                <div class="font-12 text-dark">Harris Wilson</div>
-                                <div class="font-10 text-ellipsis">A rectangle accelerates the filter. A dry courtesy advances an apart conjecture.</div>
-                              </div>
-                            </div>
-                            <div class="activity-time font-11 text-muted">2 days ago</div>
-                          </a>
-                        </li>
-                        <li class="p-lr-10">
-                          <a href="inbox.html" class="animsition-link">
-                            <div class="user-wrapper">
-                              <div class="profile-pic">
-                                <img src="./img/profile10.jpg" alt="" class="img-circle">
-                              </div>
-                              <div class="p-t-5">
-                                <div class="font-12 text-dark">Felicia Clancy</div>
-                                <div class="font-10 text-ellipsis">A stare shines past another bull! A subjective candidate declines without the envelope.</div>
-                              </div>
-                            </div>
-                            <div class="activity-time font-11 text-muted">3 days ago</div>
-                          </a>
-                        </li>
-                        <li class="p-lr-10">
-                          <a href="inbox.html" class="animsition-link">
-                            <div class="user-wrapper">
-                              <div class="profile-pic">
-                                <img src="./img/profile11.jpg" alt="" class="img-circle">
-                              </div>
-                              <div class="p-t-5">
-                                <div class="font-12 text-dark">Larry McCabe</div>
-                                <div class="font-10 text-ellipsis">The guilt encourages this inverse opposite the horizontal gene. The college suspects behind the cell! The landlord hopes.</div>
-                              </div>
-                            </div>
-                            <div class="activity-time font-11 text-muted">1 week ago</div>
-                          </a>
-                        </li>
-                      </ul>
-                    </div><!-- /.tab-pane -->
-
-                    <div class="tab-pane fade" id="inboxArchivedTab">
-                      <ul class="activity-widget no-icon list-unstyled">
-                        <li class="p-lr-10">
-                          <a href="inbox.html" class="animsition-link">
-                            <div class="user-wrapper">
-                              <div class="profile-pic">
-                                <img src="./img/profile7.jpg" alt="" class="img-circle">
-                              </div>
-                              <div class="p-t-5">
-                                <div class="font-12 text-dark">Katie Calhoun</div>
-                                <div class="font-10 text-ellipsis">A wrap asserts a flashing asterisk.</div>
-                              </div>
-                            </div>
-                            <div class="activity-time font-11 text-muted">2 hrs ago</div>
-                          </a>
-                        </li>
-                        <li class="p-lr-10">
-                          <a href="inbox.html" class="animsition-link">
-                            <div class="user-wrapper">
-                              <div class="profile-pic">
-                                <img src="./img/profile8.jpg" alt="" class="img-circle">
-                              </div>
-                              <div class="p-t-5">
-                                <div class="font-12 text-dark">Elvin Cueva</div>
-                                <div class="font-10 text-ellipsis">The bullet couples a pursuing worry before the litter. A flesh rewrites a striking scanner before the peasant.</div>
-                              </div>
-                            </div>
-                            <div class="activity-time font-11 text-muted">yesterday</div>
-                          </a>
-                        </li>
-                        <li class="p-lr-10">
-                          <a href="inbox.html" class="animsition-link">
-                            <div class="user-wrapper">
-                              <div class="profile-pic">
-                                <img src="./img/profile9.jpg" alt="" class="img-circle">
-                              </div>
-                              <div class="p-t-5">
-                                <div class="font-12 text-dark">Harris Wilson</div>
-                                <div class="font-10 text-ellipsis">A rectangle accelerates the filter. A dry courtesy advances an apart conjecture.</div>
-                              </div>
-                            </div>
-                            <div class="activity-time font-11 text-muted">2 days ago</div>
-                          </a>
-                        </li>
-                        <li class="p-lr-10">
-                          <a href="inbox.html" class="animsition-link">
-                            <div class="user-wrapper">
-                              <div class="profile-pic">
-                                <img src="./img/profile10.jpg" alt="" class="img-circle">
-                              </div>
-                              <div class="p-t-5">
-                                <div class="font-12 text-dark">Felicia Clancy</div>
-                                <div class="font-10 text-ellipsis">A stare shines past another bull! A subjective candidate declines without the envelope.</div>
-                              </div>
-                            </div>
-                            <div class="activity-time font-11 text-muted">3 days ago</div>
-                          </a>
-                        </li>
-                        <li class="p-lr-10">
-                          <a href="inbox.html" class="animsition-link">
-                            <div class="user-wrapper">
-                              <div class="profile-pic">
-                                <img src="./img/profile11.jpg" alt="" class="img-circle">
-                              </div>
-                              <div class="p-t-5">
-                                <div class="font-12 text-dark">Larry McCabe</div>
-                                <div class="font-10 text-ellipsis">The guilt encourages this inverse opposite the horizontal gene. The college suspects behind the cell! The landlord hopes.</div>
-                              </div>
-                            </div>
-                            <div class="activity-time font-11 text-muted">1 week ago</div>
-                          </a>
-                        </li>
-                      </ul>
-                    </div><!-- /.tab-pane -->
-                  </div><!-- /.tab-content -->
                 </div>
-              </div><!-- /.panel -->
+
+                <div class="table-responsive">
+                  <table class="table table-bordered font-12 table-hover">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Case ID</th>
+                        <th>Date Posted</th>
+                        <th>Description</th>
+                        <th>Member Id</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><i class="fa fa-folder-open-o table-icon" aria-hidden="true"></i></td>
+                        <td>rdh12</td>
+                        <td class="">12/6/2019</td>
+                        <td class="">LOrem Ipsum</td>
+                        <td class="">dhksjdh</td>
+                      </tr>
+
+                      <tr class="bg-danger ">
+                        <td><i class="fa fa-folder-open-o table-icon text-white" aria-hidden="true"></i></td>
+                        <td>dh781</td>
+                        <td class="">23/8/2019</td>
+                        <td class="">LOrem Ipsum</td>
+                        <td class="">121313</td>
+                      </tr>
+
+                      <tr>
+                        <td><i class="fa fa-folder-open-o table-icon" aria-hidden="true"></i></td>
+                        <td>jg6781</td>
+                        <td class="">13/9/2019</td>
+                        <td class="">LOrem Ipsum</td>
+                        <td class="">8947592</td>
+                      </tr>
+
+                      <tr>
+                        <td><i class="fa fa-folder-open-o table-icon " aria-hidden="true"></i></td>
+                        <td>trt781</td>
+                        <td class="">17/2/2019</td>
+                        <td class="">LOrem Ipsum</td>
+                        <td class="">650690</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fa fa-folder-open-o table-icon" aria-hidden="true"></i></td>
+                        <td>rdh12</td>
+                        <td class="">12/6/2019</td>
+                        <td class="">LOrem Ipsum</td>
+                        <td class="">dhksjdh</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div><!-- /.col -->
           </div><!-- /.row -->
 
@@ -790,186 +547,6 @@
             </div><!-- /.col -->
           </div><!-- /.row -->
 
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="panel">
-                <div class="panel-heading font-header">
-                  Recent Activities
-                  <ul class="panel-toolbar list-unstyled">
-                    <li class="dropdown collapse-option">
-                      <a href="#" class="text-muted dropdown-toggle" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></a>
-                      <ul class="dropdown-menu dropdown-animated fade-effect">
-                        <li><a href="#" class="text-muted refresh-widget"><i class="icon-spinner9"></i></a></li>
-                        <li><a href="#collapsedPanel3" class="expand-widget" data-toggle="collapse" aria-expanded="true"><i class="icon-circle-up"></i></a></li>
-                        <li><a href="#" class="fullscreen-widget"><i class="icon-enlarge"></i></a></li>
-                        <li><a><i class="icon-cross"></i></a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-                <div id="collapsedPanel3" class="collapse in">
-                  <div class="panel-body no-p-t">
-                    <ul class="activity-widget list-unstyled no-m">
-                      <li>
-                        <a href="#">
-                          <div class="activity-type"><i class="icon-coin-dollar"></i></div>
-                          <div class="activity-detail">
-                            <div class="text-dark font-12">Benjamin Dean</div>
-                            <div class="font-11">just purchased your item</div>
-                          </div>
-                          <div class="activity-time font-11 text-muted">12 hrs ago</div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <div class="activity-type bg-purple"><i class="icon-files-empty"></i></div>
-                          <div class="activity-detail">
-                            <div class="text-dark font-12">Sofia Lynch</div>
-                            <div class="font-11">shared files on to do list</div>
-                          </div>
-                          <div class="activity-time font-11 text-muted">yesterday</div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <div class="activity-type bg-orange"><i class="icon-cloud-upload"></i></div>
-                          <div class="activity-detail">
-                            <div class="text-dark font-12">Victoria Hale</div>
-                            <div class="font-11">uploaded project.zip to a server</div>
-                          </div>
-                          <div class="activity-time font-11 text-muted">2 days ago</div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <div class="activity-type bg-success"><i class="icon-user-plus"></i></div>
-                          <div class="activity-detail">
-                            <div class="text-dark font-12">John Knowles</div>
-                            <div class="font-11">invited Sofia Lynch to join a secret group</div>
-                          </div>
-                          <div class="activity-time font-11 text-muted">3 days ago</div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <div class="activity-type"><i class="icon-coin-dollar"></i></div>
-                          <div class="activity-detail">
-                            <div class="text-dark font-12">Lucas Nicholls</div>
-                            <div class="font-11">just purchased your item</div>
-                          </div>
-                          <div class="activity-time font-11 text-muted">1 week ago</div>
-                        </a>
-                      </li>
-                    </ul>
-                    <hr class="m-t-10 m-b-5">
-                    <div class="text-right"><a href="#" class="font-10">View All</a></div>
-                  </div>
-                </div>
-              </div>
-            </div><!-- /.col -->
-            <div class="col-lg-4">
-              <div class="panel panel-main">
-                <div class="panel-heading font-header"><i class="icon-location2 m-d-1"></i> Irvine, CA</div>
-                <div class="panel-body bg-main text-center">
-                  <canvas id="skycon1" width="70" height="70"></canvas>
-                  <div class="inline-block v-top m-l-10 m-t-10">
-                    <h1 class="font-header no-m">21°</h1>
-                    <div class="font-11">SAT 07/18</div>
-                  </div>
-                </div>
-                <ul class="list-group">
-                  <li class="list-group-item">
-                    <div class="row">
-                      <div class="col-xs-6">
-                        <div class="font-11 m-t-5">SUN 07/19</div>
-                      </div>
-                      <div class="col-xs-6 text-right">
-                        <canvas id="skycon2" width="17" height="17" class="m-d-3"></canvas>
-                        <span class="font-11 m-l-20">20°</span>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="row">
-                      <div class="col-xs-6">
-                        <div class="font-11 m-t-5">MON 07/20</div>
-                      </div>
-                      <div class="col-xs-6 text-right">
-                        <canvas id="skycon3" width="17" height="17" class="m-d-3"></canvas>
-                        <span class="font-11 m-l-20">17°</span>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="row">
-                      <div class="col-xs-6">
-                        <div class="font-11 m-t-5">TUE 07/21</div>
-                      </div>
-                      <div class="col-xs-6 text-right">
-                        <canvas id="skycon4" width="17" height="17" class="m-d-3"></canvas>
-                        <span class="font-11 m-l-20">14°</span>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="row">
-                      <div class="col-xs-6">
-                        <div class="font-11 m-t-5">WED 07/22</div>
-                      </div>
-                      <div class="col-xs-6 text-right">
-                        <canvas id="skycon5" width="17" height="17" class="m-d-3"></canvas>
-                        <span class="font-11 m-l-20">23°</span>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div><!-- /.col -->
-            <div class="col-lg-4">
-              <div class="panel panel-main">
-                <div class="panel-heading font-header">New Member</div>
-
-                <ul class="list-group">
-                  <li class="list-group-item">
-                    <div class="user-wrapper">
-                      <div class="profile-pic">
-                        <img src="./img/profile3.jpg" alt="" class="img-circle">
-                      </div>
-                      <div class="p-t-5">
-                        <div class="font-12 text-dark">Edward Murphy</div>
-                        <div class="font-10">edward@gmail.com</div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="user-wrapper">
-                      <div class="profile-pic">
-                        <img src="./img/profile7.jpg" alt="" class="img-circle">
-                      </div>
-                      <div class="p-t-5">
-                        <div class="font-12 text-dark">Anna Ross</div>
-                        <div class="font-10">annaross@gmail.com</div>
-                        <p class="font-12 m-t-5">The shorthand textbook swims past the guard. Each difficult bite tempers a season.</p>
-                      </div>
-                      <hr class="m-t-5 m-b-10 line-dashed">
-                      <div class="text-right"><button class="btn btn-main btn-sm">Approve</button></div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="user-wrapper">
-                      <div class="profile-pic">
-                        <img src="./img/profile12.jpg" alt="" class="img-circle">
-                      </div>
-                      <div class="p-t-5">
-                        <div class="font-12 text-dark">Jennifer Evans</div>
-                        <div class="font-10">jennifer@gmail.com</div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div><!-- /.col -->
-          </div><!-- /.row -->
         </div><!-- /.content-wrap -->
       </div>
       <!-- End Main Container -->

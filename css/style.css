@@ -153,6 +153,44 @@ ul.member-detail-list li:first-child{
 .header-toolbar label {
     margin-right: 8px;
 }
+.dashboard-tile {
+    display: flex;
+    min-height: 80px;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.dashboard-tile .tile-icon img{
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+.dashboard-tile .tile-icon {
+  padding: 40px 40px 20px 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: -30px;
+  right: -30px;
+
+
+}
+.dashboard-tile:hover .tile-icon img{
+  width: 50px
+}
+.dashboard-container{
+  padding: 40px 15px
+}
+.p-0{
+  padding: 0px
+}
+.table-icon {
+    font-size: 17px;
+    color: #105688;
+}
+
+.table .bg-danger td {
+    border-right-color: #ea7172 !important;
+}
 @media (min-width: 768px)
 {
   .side-nav-sm .navbar {

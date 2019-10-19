@@ -1148,7 +1148,12 @@ hr.line-dark {
   }
 }
 .panel {
-  position: relative;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 11px 0 rgba(0,0,0,.12);
+    border: 0px;
+    margin-bottom: 30px;
 }
 .panel-heading {
     padding: 8px 15px;
@@ -2486,7 +2491,7 @@ button.list-group-item:hover {
   vertical-align: middle;
 }
 .panel-stat .table tbody > tr > td {
-  padding: 15px;
+    padding: 12px 15px;
 }
 .circle-wrap {
   position: relative;
@@ -5779,10 +5784,10 @@ table.dataTable.no-footer {
   color: #5090f7;
 }
 .text-white {
-  color: #fff;
+    color: #fff !important;
 }
 .text-dark {
-  color: #344760;
+    color: #1582bc;
 }
 .text-green {
   color: #56cf87;
@@ -5835,7 +5840,7 @@ table.dataTable.no-footer {
   background-color: #f6f9fa;
 }
 .bg-dark {
-  background-color: #32465b;
+    background-color: #125688;
 }
 .bg-dark .close {
   color: rgba(255, 255, 255, 0.6);
@@ -5869,7 +5874,7 @@ a.bg-info:focus {
   background-color: #64d4e4;
 }
 .bg-success {
-  background-color: #56cf87;
+  background-color: #56cf87 !important;
   color: #fff;
 }
 .bg-success .text-muted {
@@ -5891,7 +5896,7 @@ a.bg-warning:focus {
   background-color: #ffb038;
 }
 .bg-danger {
-  background-color: #fd7a7b;
+  background-color: #fd7a7b !important;
   color: #fff;
 }
 .bg-danger .text-muted {
