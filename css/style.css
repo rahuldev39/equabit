@@ -114,12 +114,7 @@ ul.member-detail-list li:first-child{
 .checkbox-inline+.checkbox-inline, .radio-inline+.radio-inline {
     margin-left: 15px;
 }
-.order-request-list a {
-    border: 1px solid #e6e6e6;
-    display: block;
-    border-radius: 4px;
-    padding: 6px;
-}
+
 .order-request-list a img {
     width: 100%;
     max-width: 91px;
@@ -190,6 +185,38 @@ ul.member-detail-list li:first-child{
 
 .table .bg-danger td {
     border-right-color: #ea7172 !important;
+}
+.custom-radio-btn.inline{
+  display: inline-block;
+}
+.custom-radio-btn.inline label input[type="radio"]{
+  display: none;
+}
+.custom-radio-btn.inline label input[type="radio"] + span {
+    background-color: #e4eef0;
+    padding: 5px 20px;
+    display: inline-block;
+    border-radius: 20px;
+    opacity: .9;
+    color: #09294b;
+    cursor: pointer;
+}
+.custom-radio-btn.inline label input[type="radio"]:checked + span {
+    background-color: #09294b;
+    color: white;
+}
+.order-request-list label input[type="radio"]{
+  display: none;
+}
+.order-request-list label input[type="radio"] + div {
+    border: 2px solid #e6e6e6;
+    display: block;
+    border-radius: 4px;
+    padding: 6px;
+    cursor: pointer;
+}
+.order-request-list label input[type="radio"]:checked + div {
+    border-color: #02365d;
 }
 @media (min-width: 768px)
 {

@@ -14,7 +14,7 @@
     <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link href="./fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="./fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Hover Css -->
     <link href="css/hover-min.css" rel="stylesheet">
@@ -39,7 +39,7 @@
     <div class="loader"></div>
 
     <!-- wrapper -->
-		<div class="wrapper  has-footer">
+		<div class="wrapper animsition side-nav-sm hover-expand app-layout has-footer hide-footer-xs">
 
       <!-- Start Header -->
       <header class="header-top navbar">
@@ -289,14 +289,36 @@
                     </div>
                   </div>
 
-
+                        <hr>
                 <div class="form-group">
                   <div class="row">
                     <label class="col-sm-3 control-label">Call Status</label>
+
+
                     <div class="col-sm-9">
-                    <button type="button" class="btn btn-main btn-rounded">Connected</button>
-                    <button type="button" class="btn btn-danger btn-rounded">Not Connected</button>
-                    <button type="button" class="btn btn-success btn-rounded">Voice Mail</button>
+
+
+                    <div class="custom-radio-btn inline">
+                      <label>
+                        <input type="radio" name="custom" value="" checked>
+                        <span>Connected</span>
+                      </label>
+                    </div>
+
+                    <div class="custom-radio-btn inline">
+                      <label>
+                        <input type="radio" name="custom" value="">
+                        <span>Not Connected</span>
+                      </label>
+                    </div>
+
+                    <div class="custom-radio-btn inline">
+                      <label>
+                        <input type="radio" name="custom" value="">
+                        <span>Voice Mail</span>
+                      </label>
+                    </div>
+
                     </div>
                   </div>
               </div>
@@ -599,29 +621,57 @@
 
                         <div class="col-md-3">
                           <a href="#">
-                            <img src="./img/client1.png" alt="">
-                            <span>Request UBER</span>
+                          <label>
+                            <input type="radio" name="order" value="" checked>
+                              <div class="">
+                                <img src="./img/client1.png" alt="">
+                                <span>Request UBER</span>
+                              </div>
+
+
+                          </label>
                           </a>
                         </div>
 
                         <div class="col-md-3">
                           <a href="#">
-                            <img src="./img/client2.png" alt="">
-                            <span>Request LYFT</span>
-                          </a>
+                          <label>
+                            <input type="radio" name="order" value="">
+                            <div class="">
+                              <img src="./img/client2.png" alt="">
+                              <span>Request LYFT</span>
+                            </div>
+
+
+                          </label>
+                        </a>
                         </div>
 
                         <div class="col-md-3">
                           <a href="#">
-                            <img src="./img/client3.png" alt="">
-                            <span>Order Phone Services</span>
+                            <label>
+                              <input type="radio" name="order" value="">
+                              <div class="">
+                                <img src="./img/client3.png" alt="">
+                                <span>Order Phone Services</span>
+                              </div>
+
+                            </label>
                           </a>
                         </div>
 
                         <div class="col-md-3">
+
                           <a href="#">
-                            <img src="./img/client4.png" alt="">
-                            <span>Order Prescription Drug</span>
+                            <label>
+                              <input type="radio" name="order" value="">
+                              <div class="">
+                                <img src="./img/client4.png" alt="">
+                                <span>Order Prescription Drug</span>
+                              </div>
+
+                            </label>
+
                           </a>
                         </div>
 
