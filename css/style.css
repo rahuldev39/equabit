@@ -221,7 +221,7 @@ ul.member-detail-list li:first-child{
 @media (min-width: 768px)
 {
   .side-nav-sm .navbar {
-      margin-left: 50px;
+      margin-left: 0px;
   }
 .navbar {
     margin-left: 230px;

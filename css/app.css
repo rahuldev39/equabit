@@ -736,7 +736,7 @@
 }
 @media (min-width: 768px) {
   .side-nav-sm:not(.sidenav-active) .side-navigation-wrap {
-    width: 50px;
+    width: 0px;
   }
   .side-nav-sm:not(.sidenav-active) .side-nav > li > a {
     text-align: center;
@@ -1047,7 +1047,7 @@
 }
 @media (min-width: 768px) {
   .side-nav-sm:not(.sidenav-active) .footer {
-    left: 50px;
+    left: 0px;
   }
 }
 .nav-top .footer {
@@ -2326,7 +2326,7 @@ button.list-group-item:hover {
 }
 @media (min-width: 768px) {
   .side-nav-sm .main-container {
-    margin-left: 50px;
+    margin-left: 0px;
   }
 }
 .side-nav-shown .main-container {
