@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Equalbit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="./fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Hover Css -->
+    <link href="css/hover-min.css" rel="stylesheet">
+
+    <!-- Animate Css -->
+    <link href="css/animate.min.css" rel="stylesheet">
+
+    <!-- Animsition -->
+    <link href="css/animsition.min.css" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
+
+  	<!-- Core css -->
+    <link href="css/app.css" rel="stylesheet" class="core-css">
+		<link href="./css/style.css" rel="stylesheet" class="core-css">
+  </head>
+
+  <body class="loader-on">
+
+    <div class="loader"></div>
+
+    <div class="container-fluid">
+      <div class="row min-vh-100 flex-row">
+        <div class="col flex-fill bg-white login-wrapper">
+          <div class="login-main">
+            <header class="text-center">
+              <a class="cover-page-brand" href="#">
+                <img src="./img/equalbit-logo.png" alt="" width="180">
+              </a>
+
+              <h3 class="mb-2">Login to your account</h3>
+              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+            </header>
+
+            <div class="login-form">
+
+              <form class="login-form pt-2" action="#">
+
+                <div class="form-group">
+                  <input type="text" class="form-control bg-white  user" id="email" placeholder="User Name">
+                </div>
+
+                <div class="form-group">
+                  <input type="password" class="form-control bg-white  password" id="password" placeholder="Password">
+                  <div class="d-block text-right ">
+                    <small><a href="./forgot-password.html" class="text-secondary">Forgot password?</a></small>
+                  </div>
+                </div>
+
+                <a href="./search.html" class="btn btn-primary btn-block btn-submit">Sign In</a>
+
+                <p class="text-center">Don't have an account? <a href="./signup.html" class="semi-bold ml-1"> <strong> Create an account</strong></a></p>
+
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col flex-fill login-bg">
+          <div class="vh-100">
+            <div class="banner-text">
+              <h1 class="text-white  mb-2">Equalbit Solution</h1>
+              <p class="text-white ">Intelligent information retrieval system that
+    answers biomedical questions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+		<!-- Jquery -->
+  	<script src="js/jquery-1.11.2.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="bootstrap/bootstrap.min.js"></script>
+
+  	<!-- Modernizr -->
+    <script src="js/modernizr.min.js"></script>
+
+    <!-- SlimScroll -->
+    <script src="js/jquery.slimscroll.min.js"></script>
+
+    <!-- Animsition -->
+    <script src="js/jquery.animsition.min.js"></script>
+
+    <!-- App -->
+    <script src="js/app.min.js"></script>
+    <script type="text/javascript">
+    $(window).on('load', function() {
+      $('.loader').fadeOut();
+      $('body').removeClass('loader-on')
+    });
+    </script>
+	</body>
+</html>

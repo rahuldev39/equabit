@@ -246,3 +246,111 @@ ul.member-detail-list li:first-child{
     justify-content: center;
 }
 }
+
+
+
+/*########--------- Login page CSS -------############*/
+
+.login-bg {
+    background-image: url(./../img/Second-Choice.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+.login-bg::after{
+  position: absolute;
+  content: "";
+
+}
+.min-vh-100{
+  min-height: 100vh
+}
+.flex-row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.login-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-main {
+    flex: 1;
+    max-width: 400px;
+    margin: 0px 30px;
+}
+.login-form .form-group{
+  margin-bottom: 20px
+}
+.login-form .form-group .form-control {
+    border: 2px solid #e2e2e2;
+    border-radius: 36px;
+    height: 45px;
+    font-size: 16px;
+    padding: 0px 25px;
+    background-size: 22px;
+    background-position: 20px center;
+    background-repeat: no-repeat;
+    padding-left: 55px;
+}
+.login-form .form-group .form-control.user{
+  background-image: url(./../img/user.svg);
+}
+.login-form .form-group .form-control.password{
+  background-image: url(./../img/lock.svg);
+}
+.login-form .form-group .form-control::placeholder{
+  font-size: 16px;
+  color: #bfbebe
+}
+.login-form .btn-submit,.login-form .btn-submit:active,.login-form .btn-submit:focus {
+    height: 45px;
+    border-radius: 30px;
+    background-color: #004f84;
+    font-size: 16px;
+    font-weight: 500;
+    border: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px
+}
+.login-form .btn-submit:hover{
+  background-color: #1a6aa0;
+}
+.login-main header {
+    margin-bottom: 30px;
+}
+.login-main header h3 {
+    margin-top: 21px;
+    font-weight: 600;
+    color: #004f84;
+    font-size: 20px;
+}
+.text-muted {
+    color: #b9b9b9;
+}
+.banner-text p {
+    font-size: 18px;
+    opacity: .6
+}
+.banner-text{
+  max-width: 400px
+}
+.flex-fill{
+  flex: 1
+}
+@media (max-width: 767px){
+
+  .login-bg{
+    display: none
+  }
+
+}
+a {
+    color: #0b64a0;
+}
