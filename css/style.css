@@ -252,7 +252,7 @@ ul.member-detail-list li:first-child{
 /*########--------- Login page CSS -------############*/
 
 .login-bg {
-    background-image: url(./../img/Second-Choice.jpg);
+    background-image: url(./../img/First-Choice.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -277,11 +277,12 @@ ul.member-detail-list li:first-child{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 30px
 }
 .login-main {
     flex: 1;
     max-width: 400px;
-    margin: 0px 30px;
+    margin: 0px 15px;
 }
 .login-form .form-group{
   margin-bottom: 20px
@@ -356,8 +357,26 @@ ul.member-detail-list li:first-child{
   .login-bg{
     display: none
   }
-
+.flex-row .col{
+  flex: 1;
+}
 }
 a {
     color: #0b64a0;
+}
+.login-outer {
+    flex-basis: 992px;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 0px 26px #042e4e;
+}
+.d-flex{
+  display: flex;
+}
+.align-items-center{
+  align-items: center;
+}
+.justify-content-center{
+  justify-content: center;
 }
