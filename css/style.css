@@ -344,6 +344,13 @@ ul.member-detail-list li:first-child{
 .flex-fill{
   flex: 1
 }
+.separator {
+    display: inline-block;
+    height: 4px;
+    width: 82px;
+    background-color: #e54d21;
+    margin: 10px 0px;
+}
 @media (max-width: 767px){
 
   .login-bg{
